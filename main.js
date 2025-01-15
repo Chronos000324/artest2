@@ -1,5 +1,5 @@
 // Import necessary functions and objects
-import { loadGLTF } from "./libs/loader.js";
+import { loadGLTF } from "../libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
 
 // Function to initialize MindARThree instance
