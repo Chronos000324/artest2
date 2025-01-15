@@ -1,12 +1,12 @@
 // Import necessary functions and objects
-import { loadGLTF } from "../libs/loader.js";
+import { loadGLTF } from "./libs/loader.js";
 const THREE = window.MINDAR.IMAGE.THREE;
 
 // Function to initialize MindARThree instance
 const initializeMindAR = () => {
   return new window.MINDAR.IMAGE.MindARThree({
     container: document.body,
-     imageTargetSrc: '../assets/targets/course-banner.mind',
+     imageTargetSrc: './assets/targets/course-banner.mind',
   });
 };
 
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupLighting(scene);
 
-   const goufModel = await loadAndConfigureModel('../assets/models/RobotExpressive.glb', { x: 0.5, y: 0.5, z: 0.5 }, { x: 0, y: -0.4, z: 0 });
-    const droneModel = await loadAndConfigureModel('../assets/models/sd/scene.gltf', { x: 0.3, y: 0.3, z: 0.3 }, { x: 0, y: -0.4, z: 0 });
+   const goufModel = await loadAndConfigureModel('./assets/models/RobotExpressive.glb', { x: 0.5, y: 0.5, z: 0.5 }, { x: 0, y: -0.4, z: 0 });
+    //const droneModel = await loadAndConfigureModel('./assets/models/sd/scene.gltf', { x: 0.3, y: 0.3, z: 0.3 }, { x: 0, y: -0.4, z: 0 });
 
     setupAnchor(mindarThree, 0, goufModel);
     setupAnchor(mindarThree, 1, droneModel);
