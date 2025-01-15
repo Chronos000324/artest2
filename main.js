@@ -6,7 +6,7 @@ const THREE = window.MINDAR.IMAGE.THREE;
 const initializeMindAR = () => {
   return new window.MINDAR.IMAGE.MindARThree({
     container: document.body,
-     imageTargetSrc: './assets/targets/course-banner.mind',
+     imageTargetSrc: './assets/target/course-banner.mind',
   });
 };
 
