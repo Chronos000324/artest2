@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //const droneModel = await loadAndConfigureModel('./assets/models/sd/scene.gltf', { x: 0.3, y: 0.3, z: 0.3 }, { x: 0, y: -0.4, z: 0 });
 
     setupAnchor(mindarThree, 0, goufModel);
-    setupAnchor(mindarThree, 1, droneModel);
+   // setupAnchor(mindarThree, 1, droneModel);
 
     await mindarThree.start();
-    startRenderingLoop(renderer, scene, camera, [goufModel, droneModel]);
+    startRenderingLoop(renderer, scene, camera, [goufModel]);
   };
 
   start();
