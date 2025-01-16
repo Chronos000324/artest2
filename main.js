@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupLighting(scene);
 
-   const goufModel = await loadAndConfigureModel('./assets/models/RobotExpressive.glb', { x: 0.5, y: 0.5, z: 0.5 }, { x: 0, y: -0.4, z: 0 });
+   const goufModel = await loadAndConfigureModel('./assets/models/kampungTEST5.glb', { x: 0.05, y: 0.05, z: 0.05 }, { x: 0, y: -0.4, z: 0 });
     //const droneModel = await loadAndConfigureModel('./assets/models/sd/scene.gltf', { x: 0.3, y: 0.3, z: 0.3 }, { x: 0, y: -0.4, z: 0 });
 
     setupAnchor(mindarThree, 0, goufModel);
