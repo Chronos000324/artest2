@@ -6,7 +6,7 @@ const THREE = window.MINDAR.IMAGE.THREE;
 const initializeMindAR = () => {
   return new window.MINDAR.IMAGE.MindARThree({
     container: document.body,
-    imageTargetSrc: './assets/targets/course-banner.mind',
+    imageTargetSrc: './assets/target/course-banner.mind',
   });
 };
 
@@ -138,8 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
     camera.add(listener);
 
     // Load both Malay and English sounds
-    const malaySound = addSound(listener, './assets/sounds/arp1.mp3');
-    const englishSound = addSound(listener, './assets/sounds/arp2.mp3');
+    const malaySound = addSound(listener, './assets/sounds/arp1.MP3');
+    const englishSound = addSound(listener, './assets/sounds/arp2.MP3');
 
     // Set up animation mixer
     const mixer = new THREE.AnimationMixer(clockModel.scene);
